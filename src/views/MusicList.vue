@@ -159,7 +159,7 @@ export default {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: 0.1rem;
+    font-size: 0.3rem;
     margin: 0;
     padding: 0;
 }

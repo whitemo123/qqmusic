@@ -1,24 +1,28 @@
 # qqmusic
+仿QQ音乐 VUE版本
+## 已实现功能
 
-## Project setup
-```
-npm install
-```
+ - 推荐页面所有分类
+ - 排行界面所有分类
+ - 分类详情页面
+ - 搜索界面
+ - ...
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 技术栈
 
-### Compiles and minifies for production
-```
-npm run build
-```
+ - vant组件库引用并使用
+ - SPA
+ - 配置代理解决跨域
+ - vue router基本使用
+ - 模块化组织vuex
+ - axios
+ - 自定义组件并使用
+ - ...
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 演示图
+![recommend.png](https://i.loli.net/2021/02/18/IucEAvfXLOlw745.png)
+![ranking.png](https://i.loli.net/2021/02/18/ymCvpWBaSLocQs5.png)
+![search-1.png](https://i.loli.net/2021/02/18/Wty4A7GpgsNJOqM.png)
+![search-2.png](https://i.loli.net/2021/02/18/5VRN42f1cKm7ZIF.png)
+![musiclist.png](https://i.loli.net/2021/02/18/QOXTSeD219ax6nB.png)
+![play.png](https://i.loli.net/2021/02/19/QiaOpBy5ghwE2Iu.png)

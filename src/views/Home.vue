@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <van-tabs title-active-color="#22D59C">
+        <van-tabs @click="tabChange" v-model="active" title-active-color="#22D59C">
             <van-tab to="/" title="推荐"></van-tab>
             <van-tab to="/ranking" title="排行"></van-tab>
         </van-tabs>
@@ -10,6 +10,7 @@
 
 <script>
 import { Tab, Tabs } from 'vant';
+import { mapState, mapMutations } from 'vuex';
 
 export default {
   name: 'Home',
@@ -19,7 +20,21 @@ export default {
   },
   data() {
     return {
+      active: 0,
     };
+  },
+  methods: {
+    ...mapMutations('TabsModule', ['setActiveIndex']),
+    tabChange(name) {
+      this.setActiveIndex(name);
+      this.active = this.activeIndex;
+    },
+  },
+  computed: {
+    ...mapState('TabsModule', ['activeIndex']),
+  },
+  mounted() {
+    this.active = this.activeIndex;
   },
 };
 </script>
